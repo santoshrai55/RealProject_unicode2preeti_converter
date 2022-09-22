@@ -2,12 +2,12 @@
     <form action="" method="post" class="mt-5 "> {% csrf_token %} <div class="mb-3">
             <label for="source_text" class="form-label mt-5">Paste your Unicode Nepali text below or type it
                 out!</label>
-            <textarea class="form-control" id="source_text" rows="3"
+            <textarea class="form-control" id="source_text" rows="6"
                 name="source_text">{% if result.source_text %}{{result.source_text}}{% endif %}</textarea>
         </div> {% if result.result_text %} <div class="mb-3">
             <label for="target_text" class="form-label">Converted Text:</label>
-            <textarea class="form-control preeti fs-4" id="target_text" rows="3"
+            <textarea class="form-control preeti fs-4" id="target_text" rows="6"
                 name="terget_text">{{result.result_text}}</textarea>
-        </div>{% endif %} <button type="submit" class="btn btn-info mt-3">Convert</button>
+        </div>{% endif %} <button type="submit" class="btn btn-info mt-3 text-white">Convert</button>
     </form>
 </div> {% endblock header-footer %}
