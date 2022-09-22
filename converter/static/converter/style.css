@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Preeti";
+  src: url("fonts/PREETI.TTF") format("truetype");
+}
+
+.preeti {
+  font-family: Preeti;
+}
