@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from . converter import converter
-from . data import data_set
+from .data import data_set
 
 
 def home(request):
